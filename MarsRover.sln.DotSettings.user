@@ -1,0 +1,11 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=db2290f9_002D5bb6_002D48c3_002D8fbd_002D2c8383c48439/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="RoverCanMoveAndTurn #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::120AA77B-F3F5-4BE6-92C5-13ECFC6149AC::net6.0::MarsRover.Tests.AcceptanceTests.RoverCanMoveAndTurn&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe2120a5_002D2bf8_002D43cc_002Dadc2_002Ddfcda191aa68/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RoverCanMoveAndTurn" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::120AA77B-F3F5-4BE6-92C5-13ECFC6149AC::net6.0::MarsRover.Tests.AcceptanceTests.RoverCanMoveAndTurn&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
