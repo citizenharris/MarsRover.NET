@@ -11,4 +11,12 @@ public class MarsRoverShould
         
         Assert.AreEqual("0:1:N", output);
     }
+
+    [Test]
+    public void MoveTwoStepsForward()
+    {
+        string output = new MarsRover().Execute("MM");
+        
+        Assert.AreEqual("0:2:N", output);
+    }
 }
