@@ -5,26 +5,13 @@ namespace MarsRover.Tests;
 public class MarsRoverShould
 {
     [Test]
-    public void MoveForwardOneSpace()
+    [TestCase("M", "0:1:N")]
+    [TestCase("MM", "0:2:N")]
+    [TestCase("MMM", "0:3:N")]
+    public void MoveForward(string commands, string expectedOutput)
     {
-        string output = new MarsRover().Execute("M");
+        string output = new MarsRover().Execute(commands);
         
-        Assert.AreEqual("0:1:N", output);
-    }
-
-    [Test]
-    public void MoveTwoStepsForward()
-    {
-        string output = new MarsRover().Execute("MM");
-        
-        Assert.AreEqual("0:2:N", output);
-    }
-    
-    [Test]
-    public void MoveThreeStepsForward()
-    {
-        string output = new MarsRover().Execute("MMM");
-        
-        Assert.AreEqual("0:3:N", output);
+        Assert.AreEqual(expectedOutput, output);
     }
 }
