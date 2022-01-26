@@ -2,26 +2,24 @@
 
 public class MarsRover
 {
-    private string _direction;
-    private readonly Location _location = new Location();
+    private string _direction = "N";
+    private Location _location = new Location(0, 0);
 
     public string Execute(string commands)
     {
-        _direction = "N";
-        
         foreach (var command in commands)
         {
             if (command == 'M')
             {
-                _location._yCoordinate += 1;
+                _location = _location with {YCoordinate = _location.YCoordinate + 1};
             }
 
-            if (_location._yCoordinate == 10)
+            if (_location.YCoordinate == 10)
             {
-                _location._yCoordinate = 0;
+                _location = _location with {YCoordinate = 0};
             }
         }
-
-        return $"{_location._xCoordinate}:{_location._yCoordinate}:{_direction}";
+        Console.WriteLine(_location.ToString());
+        return $"{_location}:{_direction}";
     }
 }

@@ -1,7 +1,9 @@
 namespace MarsRover;
 
-public class Location
+public record Location(int XCoordinate, int YCoordinate)
 {
-    public int _xCoordinate;
-    public int _yCoordinate;
+    public override string ToString()
+    {
+        return $"{XCoordinate}:{YCoordinate}";
+    }
 }
