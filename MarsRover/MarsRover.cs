@@ -9,6 +9,11 @@ public class MarsRover
     {
         foreach (var command in commands)
         {
+            if (command == 'L')
+            {
+                _direction = "W";
+            }
+            
             if (command == 'M')
             {
                 _location = _location with {YCoordinate = _location.YCoordinate + 1};

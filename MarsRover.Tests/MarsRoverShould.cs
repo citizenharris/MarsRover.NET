@@ -17,9 +17,10 @@ public class MarsRoverShould
     }
 
     [Test]
-    public void TurnLeftCommand()
+    [TestCase("L", "0:0:W")]
+    public void TurnLeftCommand(string commands, string expectedOutput)
     {
-        var output = new MarsRover().Execute("L");
-        Assert.AreEqual("0:0:W", output);
+        var output = new MarsRover().Execute(commands);
+        Assert.AreEqual( expectedOutput, output);
     }
 }
