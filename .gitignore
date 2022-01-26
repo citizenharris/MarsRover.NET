@@ -11,6 +11,8 @@ obj/
 /node_modules
 /wwwroot/node_modules
 
+*.sln.DotSettings*
+
 # End of https://www.toptal.com/developers/gitignore/api/dotnetcore
 
 
