@@ -12,15 +12,18 @@ public class MarsRoverShould
     public void MoveForward(string commands, string expectedOutput)
     {
         string output = new MarsRover().Execute(commands);
-        
+
         Assert.AreEqual(expectedOutput, output);
     }
 
     [Test]
     [TestCase("L", "0:0:W")]
+    [TestCase("LL", "0:0:S")]
+    [TestCase("LLL", "0:0:E")]
+    [TestCase("LLLL", "0:0:N")]
     public void TurnLeftCommand(string commands, string expectedOutput)
     {
         var output = new MarsRover().Execute(commands);
-        Assert.AreEqual( expectedOutput, output);
+        Assert.AreEqual(expectedOutput, output);
     }
 }

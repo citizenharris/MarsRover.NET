@@ -2,8 +2,8 @@
 
 public class MarsRover
 {
-    private string _direction = "N";
     private Location _location = new Location(0, 0);
+    private readonly Direction _direction = new Direction();
 
     public string Execute(string commands)
     {
@@ -11,9 +11,9 @@ public class MarsRover
         {
             if (command == 'L')
             {
-                _direction = "W";
+                _direction.TurnLeft();
             }
-            
+
             if (command == 'M')
             {
                 _location = _location with {YCoordinate = _location.YCoordinate + 1};
