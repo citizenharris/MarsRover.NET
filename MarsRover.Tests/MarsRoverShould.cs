@@ -15,4 +15,11 @@ public class MarsRoverShould
         
         Assert.AreEqual(expectedOutput, output);
     }
+
+    [Test]
+    public void TurnLeftCommand()
+    {
+        var output = new MarsRover().Execute("L");
+        Assert.AreEqual("0:0:W", output);
+    }
 }
