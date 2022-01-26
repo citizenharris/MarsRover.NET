@@ -2,9 +2,8 @@
 
 public class MarsRover
 {
-    private int _xCoordinate;
-    private int _yCoordinate;
     private string _direction;
+    private readonly Location _location = new Location();
 
     public string Execute(string commands)
     {
@@ -14,10 +13,15 @@ public class MarsRover
         {
             if (command == 'M')
             {
-                _yCoordinate += 1;
+                _location._yCoordinate += 1;
+            }
+
+            if (_location._yCoordinate == 10)
+            {
+                _location._yCoordinate = 0;
             }
         }
 
-        return $"{_xCoordinate}:{_yCoordinate}:{_direction}";
+        return $"{_location._xCoordinate}:{_location._yCoordinate}:{_direction}";
     }
 }
